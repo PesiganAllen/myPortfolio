@@ -1,58 +1,32 @@
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-@keyframes drawCircle {
-    from {
-        stroke-dashoffset: 1000;
-    }
-
-    to {
-        stroke-dashoffset: 0;
-    }
+@keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to   { opacity: 1; transform: scale(1); }
 }
 
-@keyframes wiggle {
-
-    0%,
-    100% {
-        transform: rotate(-3deg);
-    }
-
-    50% {
-        transform: rotate(0deg);
-    }
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to   { opacity: 1; transform: translateX(0); }
 }
 
-.snap-section.active .container {
-    animation: fadeIn 0.8s ease-out forwards;
-}
+/* Hero entrance */
+.hero-badge      { animation: fadeInUp 0.6s ease-out 0.1s both; }
+.hero-title      { animation: fadeInUp 0.6s ease-out 0.2s both; }
+.hero-subtitle   { animation: fadeInUp 0.6s ease-out 0.3s both; }
+.hero-desc       { animation: fadeInUp 0.6s ease-out 0.4s both; }
+.hero-actions    { animation: fadeInUp 0.6s ease-out 0.5s both; }
+.hero-visual     { animation: scaleIn  0.7s ease-out 0.35s both; }
 
-.polaroid {
-    animation: wiggle 5s ease-in-out infinite;
-}
-
-.sketchy-circle {
-    /* We can use standard borders or SVG for more complex paths */
-    transition: all 0.5s ease;
-}
-
-/* Intersection Observer transitions */
-.reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease-out;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
+/* Modal open */
+.project-modal-overlay.open .project-modal {
+    animation: scaleIn 0.3s ease-out both;
 }

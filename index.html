@@ -4,253 +4,474 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allen's AI, ML, & Automation Portfolio</title>
+    <title>Allen Pesigan — AI & Automation Portfolio</title>
     <meta name="description"
-        content="Portfolio of Allen, a Computer Engineering student specializing in AI, ML, and n8n automation.">
+        content="Portfolio of Allen Pesigan — Computer Engineering major in AI, specializing in RAG systems, n8n automation, FastAPI backends, and Flutter mobile development.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&family=Inter:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body>
-    <div id="loader">
-        <div class="loader-content">
-            <span class="eyebrow">PREPARING...</span>
-            <div class="loader-line"></div>
+
+    <!-- ─── NAV ──────────────────────────────────────────────── -->
+    <nav id="navbar">
+        <a href="#hero" class="nav-logo">Allen<span>.</span></a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#techstack">Tech Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+        </ul>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ─── HERO ─────────────────────────────────────────────── -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">Computer Engineering · Artificial Intelligence</div>
+                <h1 class="hero-title">
+                    Allen Pesigan
+                    <span class="accent-text">Builder of Intelligent Systems</span>
+                </h1>
+                <p class="hero-subtitle">AI · Automation · Backend · Mobile</p>
+                <p class="hero-desc">
+                    I build intelligent systems that work quietly behind the scenes so you can focus on what truly matters.
+                    Specializing in Artificial Intelligence, n8n workflow automation, and FastAPI backends,
+                    I bridge the gap between complex data and seamless efficiency.
+                </p>
+                <div class="hero-core-tech">
+                    <span class="core-tech-label">Core Tech:</span>
+                    AI Development &nbsp;·&nbsp; FastAPI &nbsp;·&nbsp; n8n Automation &nbsp;·&nbsp; Backend Systems &nbsp;·&nbsp; Software Engineering
+                </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        View Projects
+                    </a>
+                    <a href="https://www.linkedin.com/in/allenpesigan" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-avatar-ring"></div>
+                <div class="hero-avatar-wrap">
+                    <img src="assets/idallen.png" alt="Allen Pesigan" class="hero-avatar">
+                </div>
+                <div class="hero-stat-cards">
+                    <div class="hero-stat">
+                        <span class="stat-num">6+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-num">AI</span>
+                        <span class="stat-label">Major</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="paper-overlay"></div>
-
-    <main id="portfolio-container">
-        <!-- Section 1: Hero -->
-        <section id="hero" class="snap-section">
-            <div class="content">
-                <div class="title-wrapper">
-                    <span class="eyebrow fade-in">ALLEN'S</span>
-                    <h1 class="split-text">AI, ML, <br><span class="highlight">AUTOMATION</span><br>PORTFOLIO</h1>
-                    <svg class="sketchy-loop" viewBox="0 0 500 200">
-                        <path d="M40,100 Q150,20 250,100 T460,100" />
-                    </svg>
+    <!-- ─── ABOUT ─────────────────────────────────────────────── -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-img-wrapper reveal">
+                <div class="about-img-bg"></div>
+                <div class="about-img-inner">
+                    <img src="assets/idallen.png" alt="Allen Pesigan">
+                </div>
+                <div class="about-img-badge">
+                    <span class="badge-emoji">💡</span>
+                    <span class="badge-text">CpE · AI Major</span>
                 </div>
             </div>
-            <div class="decoration doodle-1">
-                <svg viewBox="0 0 100 100" width="150" height="150">
-                    <path d="M10,50 Q30,10 50,50 T90,50" stroke="#ff8c00" stroke-width="4" fill="none" />
-                </svg>
-            </div>
-        </section>
 
-        <!-- Section 2: About -->
-        <section id="about" class="snap-section">
-            <div class="container grid">
-                <div class="polaroid-wrapper">
-                    <div class="polaroid">
-                        <img src="canva/2.jpg" alt="Allen" class="polaroid-img">
-                        <div class="star-sticker"></div>
-                    </div>
-                </div>
-                <div class="text-content">
-                    <h2>HELLO, I'M <span class="highlight-orange">ALLEN</span></h2>
-                    <p>A Computer Engineering student majoring in Artificial Intelligence, specializing in software
-                        development, FastAPI backends, and n8n workflow automation. My focus is turning ideas into
-                        intelligent systems that work quietly behind the scenes, allowing you to focus on what truly
-                        matters.</p>
-                </div>
-            </div>
-            <div class="decoration squiggle-1"></div>
-        </section>
+            <div class="about-text">
+                <span class="section-label">About Me</span>
+                <h2 class="section-title reveal reveal-delay-1">Hello, I'm Allen</h2>
+                <p class="reveal reveal-delay-2">
+                    I'm a Computer Engineering major in Artificial Intelligence. I build intelligent
+                    systems that work quietly behind the scenes — from RAG-powered chatbots and FastAPI
+                    backends to on-device ML in mobile apps and n8n automation pipelines.
+                </p>
+                <p class="reveal reveal-delay-2">
+                    My focus is bridging the gap between complex data and seamless efficiency.
+                    Whether it's a real-time facial recognition access system or a Telegram bot
+                    that deflects 80% of support queries, I care about building things that work reliably.
+                </p>
 
-        <!-- Section 3: Skills -->
-        <section id="skills" class="snap-section">
-            <div class="container">
-                <h2 class="section-title">MY <span class="highlight-orange">SKILLS</span></h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <h3>SOFTWARE DEVELOPMENT</h3>
-                        <p>Focusing on backend logic and efficient algorithm design:</p>
-                        <ul>
-                            <li><strong>Python:</strong> Proficient in building scalable applications for AI/ML and
-                                Computer Vision (OpenCV, InsightFace).</li>
-                            <li><strong>C++:</strong> Experienced in high-performance programming and core software
-                                principles.</li>
-                            <li><strong>JavaScript:</strong> Capable of developing dynamic web solutions and integrating
-                                APIs.</li>
-                        </ul>
+                <div class="about-highlights reveal reveal-delay-3">
+                    <div class="highlight-item">
+                        <span class="hi-icon">🤖</span>
+                        <div class="hi-title">AI & RAG Systems</div>
+                        <div class="hi-sub">n8n · Qdrant · OpenAI</div>
                     </div>
-                    <div class="skill-card">
-                        <h3>ANDROID APPLICATION DEVELOPMENT</h3>
-                        <p>Mobile-first solutions built within the Android Studio ecosystem:</p>
-                        <ul>
-                            <li>Skilled in designing responsive <strong>User Interfaces (UI)</strong> and ensuring
-                                smooth <strong>User Experiences (UX)</strong>.</li>
-                            <li>Experience managing app lifecycles, local storage, and third-party API integrations to
-                                create functional tools.
-                            </li>
-                        </ul>
+                    <div class="highlight-item">
+                        <span class="hi-icon">⚙️</span>
+                        <div class="hi-title">Backend Development</div>
+                        <div class="hi-sub">FastAPI · Python · Firebase</div>
                     </div>
-                    <div class="skill-card">
-                        <h3>N8N WORKFLOW AUTOMATION</h3>
-                        <p>Streamlining complex processes through low-code/no-code logic:</p>
-                        <ul>
-                            <li>Designing automated pipelines that connect diverse services like Google Drive, Supabase,
-                                Qdrant, and various LLM APIs.</li>
-                            <li>Building <strong>RAG-capable</strong> AI agents to automate data retrieval and response
-                                generation.</li>
-                        </ul>
+                    <div class="highlight-item">
+                        <span class="hi-icon">📱</span>
+                        <div class="hi-title">Mobile Development</div>
+                        <div class="hi-sub">Flutter · Android Studio</div>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="hi-icon">🔌</span>
+                        <div class="hi-title">IoT & Embedded</div>
+                        <div class="hi-sub">ESP32 · Arduino · BLE</div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Section 4: Projects Title -->
-        <section id="projects-intro" class="snap-section center-content">
-            <div class="title-wrapper-large">
-                <span class="eyebrow">ALLEN'S</span>
-                <h1>PROJECTS</h1>
-                <div class="sketchy-circle-large"></div>
-            </div>
-        </section>
+    <!-- ─── TECH STACK ────────────────────────────────────────── -->
+    <section id="techstack">
+        <div class="container">
+            <span class="section-label reveal">Technical Skills</span>
+            <h2 class="section-title reveal reveal-delay-1">My Tech Stack</h2>
+            <p class="section-desc reveal reveal-delay-2">
+                Technologies and tools I work with across AI/ML, mobile, automation, and hardware.
+            </p>
 
-        <!-- Section 5: Project 1 - N8N RAG -->
-        <section id="project-1" class="snap-section project-section">
-            <div class="container grid">
-                <div class="text-content">
-                    <div class="project-header">
-                        <span class="project-num">PROJECT <span class="circle-num">1</span></span>
-                        <h2>N8N RAG</h2>
+            <div class="tech-categories">
+                <div class="tech-category-card reveal reveal-delay-1">
+                    <div class="tc-header">
+                        <div class="tc-icon">🤖</div>
+                        <div class="tc-title">AI / RAG Development</div>
                     </div>
-                    <p>A streamlined <strong>Retrieval-Augmented Generation (RAG)</strong> workflow built in
-                        <strong>n8n</strong>. This system features an intelligent AI chat agent capable of answering
-                        user queries based on custom documents.
-                    </p>
-                    <ul class="project-features">
-                        <li><strong>Document Ingestion Pipeline:</strong> Manually triggered to download files from
-                            Google Drive and index them into Supabase.</li>
-                        <li><strong>Conversational AI Agent:</strong> Powered by OpenAI, retrieves relevant information
-                            from the vector store.</li>
-                        <li><strong>Persistent Context:</strong> Uses Postgres Chat Memory for multi-turn chat
-                            experience.</li>
-                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">RAG Pipelines</span>
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">Qdrant</span>
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">Vector Embeddings</span>
+                        <span class="tech-tag">Google ML Kit</span>
+                        <span class="tech-tag">FaceNet TFLite</span>
+                        <span class="tech-tag">InsightFace</span>
+                        <span class="tech-tag">OpenCV</span>
+                    </div>
                 </div>
-                <div class="visual-content">
-                    <div class="video-container">
-                        <video controls poster="canva/6.jpg">
-                            <source src="assets/n8n.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
+
+                <div class="tech-category-card reveal reveal-delay-2">
+                    <div class="tc-header">
+                        <div class="tc-icon">📱</div>
+                        <div class="tc-title">Mobile Development</div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">Android Studio</span>
+                        <span class="tech-tag">Firebase SDK</span>
+                        <span class="tech-tag">Google ML Kit</span>
+                    </div>
+                </div>
+
+                <div class="tech-category-card reveal reveal-delay-3">
+                    <div class="tc-header">
+                        <div class="tc-icon">⚙️</div>
+                        <div class="tc-title">Software Development</div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Telegram Bot API</span>
+                    </div>
+                </div>
+
+                <div class="tech-category-card reveal reveal-delay-1">
+                    <div class="tc-header">
+                        <div class="tc-icon">🗄️</div>
+                        <div class="tc-title">Databases & Backend</div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">Qdrant</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="tech-category-card reveal reveal-delay-2">
+                    <div class="tc-header">
+                        <div class="tc-icon">🔌</div>
+                        <div class="tc-title">IoT & Embedded Systems</div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">ESP32</span>
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">BLE</span>
+                        <span class="tech-tag">Blynk</span>
+                        <span class="tech-tag">PCB Design</span>
+                        <span class="tech-tag">Circuit Assembly</span>
+                    </div>
+                </div>
+
+                <div class="tech-category-card reveal reveal-delay-3">
+                    <div class="tc-header">
+                        <div class="tc-icon">🔧</div>
+                        <div class="tc-title">Tools & QA</div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">Quality Assurance</span>
+                        <span class="tech-tag">n8n Automation</span>
+                        <span class="tech-tag">VS Code</span>
+                        <span class="tech-tag">Android Studio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PROJECTS ──────────────────────────────────────────── -->
+    <section id="projects">
+        <div class="container">
+            <span class="section-label reveal">Work</span>
+            <h2 class="section-title reveal reveal-delay-1">Featured Projects</h2>
+            <p class="section-desc reveal reveal-delay-2">
+                A selection of projects spanning AI, mobile, automation, and hardware.
+                Click any card to see the full breakdown.
+            </p>
+
+            <div class="projects-grid">
+
+                <!-- Sweptie -->
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-card-media">
+                        <video muted playsinline loop preload="metadata">
+                            <source src="assets/sweptie.mp4" type="video/mp4">
                         </video>
-                    </div>
-                    <div class="tech-gallery">
-                        <div class="tech-item">
-                            <p>Walkthrough</p><img src="canva/6.jpg" alt="n8n walkthrough">
+                        <div class="play-overlay">
+                            <svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg>
                         </div>
-                        <div class="tech-item">
-                            <p>Database</p><img src="canva/7.jpg" alt="Supabase database">
+                    </div>
+                    <div class="project-card-body">
+                        <div class="project-tag-row">
+                            <span class="project-type-tag">Mobile App</span>
+                            <span class="project-type-tag">Flutter</span>
+                            <span class="project-type-tag">On-device AI</span>
+                        </div>
+                        <h3 class="project-card-title">Sweptie</h3>
+                        <p class="project-card-desc">
+                            Privacy-first Android app that auto-scans your gallery, runs OCR on-device
+                            via Google ML Kit, and classifies screenshots into smart categories.
+                        </p>
+                        <div class="project-stack">
+                            <span class="stack-chip">Flutter</span>
+                            <span class="stack-chip">Dart</span>
+                            <span class="stack-chip">ML Kit</span>
+                            <span class="stack-chip">SQLite</span>
+                            <span class="stack-chip">Firebase</span>
+                        </div>
+                        <div class="project-card-footer">
+                            <span class="project-card-year">2026</span>
+                            <button class="project-detail-btn" data-project="sweptie">
+                                View details
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Section 6: Project 2 - CHATBOT -->
-        <section id="project-2" class="snap-section project-section">
-            <div class="container grid">
-                <div class="text-content">
-                    <div class="project-header">
-                        <span class="project-num">PROJECT <span class="circle-num">2</span></span>
-                        <h2>CHATBOT</h2>
-                        <span class="subtitle"><strong>Intelligent Business Engagement</strong></span>
-                    </div>
-                    <p>This project leverages <strong>ChatSDK</strong> to deploy an intelligent, scalable chatbot that
-                        transforms business engagement. Serving as a 24/7 digital concierge.</p>
-                    <ul class="project-features">
-                        <li><strong>Automated Queries:</strong> Instantly handles "Level 1" support like pricing and
-                            order tracking.</li>
-                        <li><strong>Efficiency:</strong> Deflects up to 80% of routine inquiries, reducing operational
-                            overhead.</li>
-                        <li><strong>Brand Consistency:</strong> Delivers a professional, reliable experience that builds
-                            trust.</li>
-                    </ul>
-                </div>
-                <div class="visual-content">
-                    <div class="tech-gallery">
-                        <div class="tech-item">
-                            <img src="canva/8.jpg" alt="Chatbot Intro" class="polaroid-img">
+                <!-- RAG Chatbot -->
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="project-card-media">
+                        <video muted playsinline loop poster="canva/6.jpg">
+                            <source src="assets/n8n.mp4" type="video/mp4">
+                        </video>
+                        <div class="play-overlay">
+                            <svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg>
                         </div>
                     </div>
-                    <div class="tech-gallery">
-                        <div class="tech-item">
-                            <p>Snapshots</p><img src="canva/9.jpg" alt="Chatbot Snapshots">
+                    <div class="project-card-body">
+                        <div class="project-tag-row">
+                            <span class="project-type-tag">RAG</span>
+                            <span class="project-type-tag">AI Automation</span>
+                        </div>
+                        <h3 class="project-card-title">RAG Chatbot System</h3>
+                        <p class="project-card-desc">
+                            n8n-powered RAG system at Sofi AI that cut response time from 2 hours to under 5 minutes,
+                            serving 50+ queries daily via a Telegram bot backed by Qdrant vectors.
+                        </p>
+                        <div class="project-stack">
+                            <span class="stack-chip">n8n</span>
+                            <span class="stack-chip">Qdrant</span>
+                            <span class="stack-chip">OpenAI</span>
+                            <span class="stack-chip">Telegram</span>
+                        </div>
+                        <div class="project-card-footer">
+                            <span class="project-card-year">2026</span>
+                            <button class="project-detail-btn" data-project="rag">
+                                View details
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Section 7: Project 3 - FACUL-TRACK -->
-        <section id="project-3" class="snap-section project-section">
-            <div class="container grid">
-                <div class="text-content">
-                    <div class="project-header">
-                        <span class="project-num">PROJECT <span class="circle-num">3</span></span>
-                        <h2>FACUL-TRACK</h2>
-                        <span class="subtitle"><strong>AI-Driven Biometric Access Control</strong></span>
+                <!-- ChatSDK RAG -->
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="project-card-media">
+                        <img src="canva/8.jpg" alt="RAG Knowledge Base Search">
                     </div>
-                    <p>An intelligent security system leveraging <strong>Deep Learning</strong> to automate laboratory
-                        access. Features on-device facial recognition using <strong>FaceNet TensorFlow Lite</strong>.
-                    </p>
-                    <ul class="project-features">
-                        <li><strong>Machine Learning Pipeline:</strong> On-device recognition cross-referencing
-                            real-time schedules.</li>
-                        <li><strong>Hardware Integration:</strong> ESP32-controlled solenoid lock via BLE.</li>
-                        <li><strong>Firebase Sync:</strong> Real-time data synchronization.</li>
-                    </ul>
+                    <div class="project-card-body">
+                        <div class="project-tag-row">
+                            <span class="project-type-tag">RAG</span>
+                            <span class="project-type-tag">ChatSDK</span>
+                        </div>
+                        <h3 class="project-card-title">RAG Knowledge Base Search</h3>
+                        <p class="project-card-desc">
+                            ChatSDK-powered upgrade to the RAG system, achieving significantly faster
+                            response times and finer control over the retrieval layer.
+                        </p>
+                        <div class="project-stack">
+                            <span class="stack-chip">ChatSDK</span>
+                            <span class="stack-chip">Qdrant</span>
+                            <span class="stack-chip">Python</span>
+                            <span class="stack-chip">Telegram</span>
+                        </div>
+                        <div class="project-card-footer">
+                            <span class="project-card-year">2026</span>
+                            <button class="project-detail-btn" data-project="chatsdk">
+                                View details
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="visual-content">
-                    <div class="video-container">
-                        <video controls poster="canva/10.jpg">
+
+                <!-- Facul-Track -->
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-card-media">
+                        <video muted playsinline loop poster="canva/11.jpg">
                             <source src="assets/faceRecogFinal.mp4" type="video/mp4">
                         </video>
+                        <div class="play-overlay">
+                            <svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg>
+                        </div>
                     </div>
-                    <div class="tech-gallery">
-                        <div class="tech-item">
-                            <p>Database</p><img src="canva/12.jpg" alt="Firebase Database">
+                    <div class="project-card-body">
+                        <div class="project-tag-row">
+                            <span class="project-type-tag">AI / ML</span>
+                            <span class="project-type-tag">Android</span>
+                            <span class="project-type-tag">IoT</span>
+                        </div>
+                        <h3 class="project-card-title">Facul-Track</h3>
+                        <p class="project-card-desc">
+                            Facial-recognition-based faculty access control system using FaceNet TFLite,
+                            Firebase schedule sync, and an ESP32-controlled solenoid lock via BLE.
+                        </p>
+                        <div class="project-stack">
+                            <span class="stack-chip">FaceNet TFLite</span>
+                            <span class="stack-chip">Firebase</span>
+                            <span class="stack-chip">ESP32</span>
+                            <span class="stack-chip">Android</span>
+                        </div>
+                        <div class="project-card-footer">
+                            <span class="project-card-year">2025</span>
+                            <button class="project-detail-btn" data-project="facultrk">
+                                View details
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Section 8: Final -->
-        <section id="contact" class="snap-section center-content">
-            <div class="text-center">
-                <div class="sketchy-box">
-                    <h1>LETS WORK TOGETHER!</h1>
-                </div>
-                <div class="contact-info">
-                    <h3>Allen Pesigan</h3>
-                    <p>Software and Backend Developer | n8n Automation Specialist</p>
-                    <p class="contact-email">Email: <a href="mailto:allenpesigan@gmail.com">allenpesigan@gmail.com</a>
-                    </p>
-                </div>
-            </div>
-            <svg class="final-squiggle" viewBox="0 0 500 100">
-                <path d="M0,50 C100,0 200,100 300,50 S500,0 500,50" stroke="#1a4325" stroke-width="6" fill="none"
-                    stroke-linecap="round" />
-            </svg>
-        </section>
-    </main>
 
-    <!-- Image Lightbox Modal -->
-    <div id="image-modal" class="modal">
-        <span class="close-modal">&times;</span>
-        <div class="modal-content-wrapper">
-            <img class="modal-content" id="full-image">
-            <div id="modal-caption"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── EXPERIENCE ────────────────────────────────────────── -->
+    <section id="experience">
+        <div class="container">
+            <span class="section-label reveal">Background</span>
+            <h2 class="section-title reveal reveal-delay-1">Experience & Education</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal reveal-delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2026</div>
+                    <div class="timeline-title">Quality Assurance & AI Solutions</div>
+                    <div class="timeline-org">Sofi AI Tech Solution Inc.</div>
+                    <ul class="timeline-bullets">
+                        <li>Performed QA testing on AI-powered software products</li>
+                        <li>Built RAG chatbot systems reducing customer response time from 2 hours to &lt;5 minutes</li>
+                        <li>Developed Telegram bot interfaces backed by Qdrant vector search</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item reveal reveal-delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 – Present</div>
+                    <div class="timeline-title">Bachelor of Science in Computer Engineering</div>
+                    <div class="timeline-org">Major in Artificial Intelligence</div>
+                    <ul class="timeline-bullets">
+                        <li>Top Performing Student — 3rd Year (1st & 2nd Semester), 2nd Year (2nd Semester)</li>
+                        <li>Member — CURSOR (Computer Engineering Students' Organization) & ICpEP</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CONTACT ───────────────────────────────────────────── -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-label reveal">Get In Touch</div>
+            <h2 class="contact-title reveal reveal-delay-1">
+                Let's build something<br><span>together.</span>
+            </h2>
+            <p class="contact-subtitle reveal reveal-delay-2">
+                Open to internships, collaborations, and project opportunities.
+                Reach out — I'd love to connect.
+            </p>
+
+            <div class="contact-links reveal reveal-delay-3">
+                <a href="mailto:allenpesigan@gmail.com" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    allenpesigan@gmail.com
+                </a>
+                <div class="contact-divider"></div>
+                <a href="https://www.linkedin.com/in/allenpesigan" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    linkedin.com/in/allenpesigan
+                </a>
+            </div>
+
+            <p class="contact-footer-note reveal reveal-delay-4">Philippines · Available for remote work</p>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ────────────────────────────────────────────── -->
+    <footer>
+        <p>© 2026 Allen Pesigan</p>
+    </footer>
+
+    <!-- ─── PROJECT MODAL ─────────────────────────────────────── -->
+    <div id="project-modal-overlay" class="project-modal-overlay">
+        <div class="project-modal" role="dialog" aria-modal="true">
+            <button id="project-modal-close" class="project-modal-close" aria-label="Close">✕</button>
+            <div id="project-modal-body"></div>
         </div>
     </div>
 

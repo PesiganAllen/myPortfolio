@@ -32,29 +32,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // ── Project data ───────────────────────────────────────────
     // gallery: array of { type: 'video'|'image', src, poster? }
     const projects = {
-        rag: {
-            title: 'RAG Chatbot System',
-            subtitle: 'n8n + Qdrant + Telegram · Sofi AI · 2026',
-            tags: ['RAG', 'AI Automation', 'n8n'],
-            stack: ['n8n', 'Qdrant', 'OpenAI', 'Telegram Bot API', 'Vector Embeddings', 'Supabase'],
+        savingsReminder: {
+            title: 'n8n Savings Reminder Bot',
+            subtitle: 'n8n + Google Sheets + Telegram',
+            tags: ['Automation', 'AI Automation', 'n8n'],
+            stack: ['n8n', 'Google Sheets', 'Telegram Bot API', 'Cloudflare Workers'],
             gallery: [
-                { type: 'video', src: 'assets/n8n.mp4', poster: 'canva/6.jpg' },
-                { type: 'image', src: 'canva/6.jpg' },
-                { type: 'image', src: 'canva/7.jpg' },
+                { type: 'image', src: 'assets/savingsReminder/n8n-send.png' },
+                { type: 'image', src: 'assets/savingsReminder/n8n-reply.png' },
+                { type: 'image', src: 'assets/savingsReminder/tg.png' },
+                { type: 'image', src: 'assets/savingsReminder/gsheets.png' },
             ],
-            desc: 'A RAG-powered customer service system built at Sofi AI that reduced response time from 2 hours to under 5 minutes, handling 50+ customer queries daily. The system ingests documents, stores vector embeddings in Qdrant, and surfaces relevant answers through a Telegram bot interface.',
+            desc: 'A bot that reminds users of their weekly savings goals everyday until both is marked as paid. It uses n8n to orchestrate the workflow, Google Sheets to track financial data and paid status, and Telegram for user interaction.',
             features: [
-                'Document ingestion pipeline that indexes files from Google Drive into a Qdrant vector collection',
-                'Conversational AI agent powered by OpenAI with persistent multi-turn chat context via Postgres memory',
-                'Telegram bot front-end delivering real-time, semantically accurate answers',
-                'Reduced average response time from 2 hours to under 5 minutes',
+                'Automated savings reminders based on user-defined goals',
+                'Integration with Google Sheets for tracking financial data and paid status',
+                'Telegram bot interface for easy communication',
+                'Cloudflare Workers for telegram mock processing',
             ]
         },
         chatsdk: {
-            title: 'RAG Knowledge Base Search',
-            subtitle: 'ChatSDK + Qdrant + Telegram · Sofi AI · 2026',
+            title: 'RAG ChatSDK Chatbot',
+            subtitle: 'ChatSDK + Qdrant + Telegram',
             tags: ['RAG', 'ChatSDK', 'AI'],
-            stack: ['ChatSDK', 'Qdrant', 'Python', 'Telegram Bot API'],
+            stack: ['ChatSDK', 'Qdrant', 'Python'],
             gallery: [
                 { type: 'image', src: 'canva/8.jpg' },
                 { type: 'image', src: 'canva/9.jpg' },

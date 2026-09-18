@@ -32,6 +32,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // ── Project data ───────────────────────────────────────────
     // gallery: array of { type: 'video'|'image', src, poster? }
     const projects = {
+        studioBooking: {
+            title: 'Studio Booking AI Agent',
+            subtitle: 'n8n + Slack + Google Sheets',
+            tags: ['Automation', 'AI Automation', 'n8n'],
+            stack: ['n8n', 'Slack', 'Google Sheets'],
+            gallery: [
+                { type: 'image', src: 'assets/studioBooking/chatbot.png' },
+                { type: 'image', src: 'assets/studioBooking/remind.png' },
+                { type: 'image', src: 'assets/studioBooking/safety.png' },
+                { type: 'image', src: 'assets/studioBooking/cancellation.png' },
+                { type: 'image', src: 'assets/studioBooking/slack.png' },
+            ],
+            desc: 'An autonomous 24/7 AI agent built in n8n that parses booking inquiries, validates real-time schedules, logs appointments to Google Sheets, and pushes live updates and EOD summaries to Slack.',
+            features: [
+                '24/7 Inquiry & Intent Parsing: Automatically interprets customer requests, extracts key session details, and handles multi-turn rescheduling.',   
+                'Real-Time Schedule Validation: Checks live availability to prevent double-bookings and conflicts before confirming a slot.',
+                'Automated Data Persistence: Logs finalized customer information and appointment details directly into Google Sheets.',
+                'Admin Notifications & EOD Reporting: Pushes instant booking alerts and automated end-of-day summary reports directly to Slack channels.',
+                'Human Handover: Safely transfers complex or out-of-scope conversations to human operators when needed.',
+            ]
+        },
         savingsReminder: {
             title: 'n8n Savings Reminder Bot',
             subtitle: 'n8n + Google Sheets + Telegram',
